@@ -1,9 +1,26 @@
 import "../style.css";
 
-const app = document.getElementById("app");
+const todos = [
+    {
+        id: 1,
+        text: "Buy milk",
+        completed: false
+    },
+    {
+        id: 2,
+        text: "Buy bread",
+        completed: false
+    },
+];
 
-app.innerHTML = `
-    <div class="flex items-center justify-center h-screen">
-        <h1 class="text-5xl">Hello World!</h1>
-    </div>
-`;
+let nextTodoId = 3;
+
+let filter = "all"; // or "active" or "completed"
+
+function renderToDos() {
+
+}
+
+//renderToDos(); rather than just running the function when script is called, 
+//this event triggers once all html elements are loaded and calls the function
+document.addEventListener("DOMContentLoaded", renderTodos) 
