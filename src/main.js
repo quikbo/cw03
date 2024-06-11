@@ -24,3 +24,4 @@ function renderToDos() {
 //renderToDos(); rather than just running the function when script is called, 
 //this event triggers once all html elements are loaded and calls the function
 document.addEventListener("DOMContentLoaded", renderTodos) 
+//test
